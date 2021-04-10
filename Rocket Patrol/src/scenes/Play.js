@@ -6,6 +6,7 @@ class Play extends Phaser.Scene {
     preload() {
         this.load.image('starfield', 'assets/starfield.png');
         this.load.image('rocket', 'assets/rocket.png');
+        this.load.image('ship', 'assets/spaceship.png');
     }
 
     create () {
@@ -19,6 +20,27 @@ class Play extends Phaser.Scene {
             game.config.height - borderUISize - borderPadding,
             'rocket'
             );
+
+        this.ship1 = new Ship(
+            this,
+            100,
+            200,
+            'ship'
+        );
+        
+        this.ship2 = new Ship(
+            this,
+            300,
+            240,
+            'ship'
+        );
+
+        this.ship3 = new Ship(
+            this,
+            380,
+            300,
+            'ship'
+        );
 
         // green UI background
         this.add.rectangle(
@@ -64,5 +86,9 @@ class Play extends Phaser.Scene {
 
         // epic function call for epic movement
         this.p1Rocket.update();
+
+        this.ship1.update();
+        this.ship2.update();
+        this.ship3.update();
     }
 }
