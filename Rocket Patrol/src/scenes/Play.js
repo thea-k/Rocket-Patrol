@@ -39,6 +39,9 @@ class Play extends Phaser.Scene {
                            borderUISize, 
                            game.config.height, 
                            0xFFFFFF).setOrigin(0 ,0);
-        
+    }
+
+    update() {
+        this.starfield.tilePositionX -= 4; // background scroll to the right
     }
 }
