@@ -1,3 +1,12 @@
+/*
+ * Name: Thea Knasiak
+ * Project: Rocket Patrol Mods
+ * Date: 4/15/2021
+ * Time Until Completion: 
+ * Points Breakdown:
+ * 
+*/
+
 let config = {
     type: Phaser.CANVAS,
     width: 640,
