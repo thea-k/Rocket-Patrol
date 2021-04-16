@@ -4,7 +4,7 @@
  * Date: 4/15/2021
  * Time Until Completion: 
  * Points Breakdown:
- * asdfeadfasdfeawfsad
+ * 
 */
 
 let config = {
